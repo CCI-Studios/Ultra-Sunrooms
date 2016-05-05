@@ -9,7 +9,6 @@
 	var max1 = $('.view-products-page .views-row').length;
 
 	$('.view-products-page .views-row').each(function(index){
-		console.log($(this).find('.subtitle p').text());
 		if($(this).find('.subtitle p').text() == " "){
 			$(this).find('.subtitle p').hide();
 		}
