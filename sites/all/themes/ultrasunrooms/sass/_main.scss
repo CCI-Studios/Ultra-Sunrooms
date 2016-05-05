@@ -1278,6 +1278,14 @@ a#back
 		border-right:0px;
 	}
 
+	.views-row.original
+	{	
+		.subtitle2,
+		.subbody2{
+			display: none;
+		}
+	}
+
 	.views-row.duplicate
 	{	
 		.subtitle1,
@@ -1392,16 +1400,12 @@ a#back
 			font-weight: bold;
 			font-style: italic;
 			cursor: pointer;
-
-
-			&.active p,
-			p:hover
+			p
 			{
 				background:$black;
 			}
 
-			p:hover:after,
-			&.active p:after
+			p:after
 			{
 				content: "";
 				display: block;
@@ -1415,21 +1419,6 @@ a#back
 				border-right: 6px solid transparent;
 				border-top: 8px solid $black;
 			}
-		}
-
-		.subbody
-		{
-			display: none;
-		}
-
-		.notvisible
-		{
-			display: none;
-		}
-
-		.subbody.visiblebody
-		{
-			display: block!important;
 		}
 	}
 

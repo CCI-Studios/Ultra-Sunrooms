@@ -19,31 +19,7 @@ var max1= $('.view-products-page .views-row').length;
 
     function init(j)
 	{	
-		$('.view-products-page .views-row-'+j+' .side-text .subtitle1').addClass('active');
-        $('.view-products-page .views-row-'+j+' .side-text .subbody1').addClass('visiblebody');
-
-        if($('.view-products-page .views-row-'+j+' .side-text .subtitle p').text()==" ")
-        {
-        	 $('.view-products-page .views-row-'+j+' .side-text .subtitle').css('display','none');
-        }
-
-		$('.view-products-page .views-row-'+j+' .side-text .subtitle').click(function()
-		{
-         	if($(this).hasClass('subtitle1'))
-            {   
-                $('.view-products-page .views-row-'+j+' .side-text .subtitle2').removeClass('active');
-                $(this).addClass('active');
-                $('.view-products-page .views-row-'+j+' .side-text .subbody2').removeClass('visiblebody');
-                $('.view-products-page .views-row-'+j+' .side-text .subbody1').addClass('visiblebody');
-            }
-            else
-            {     
-                $('.view-products-page .views-row-'+j+' .side-text .subtitle1').removeClass('active');
-                $('.view-products-page .views-row-'+j+' .side-text .subtitle2').addClass('active');
-                $('.view-products-page .views-row-'+j+' .side-text .subbody1').removeClass('visiblebody');
-                $('.view-products-page .views-row-'+j+' .side-text .subbody2').addClass('visiblebody');
-            }
-      	});
+	
 	}
 	
 	$('.item-list ul').slick({

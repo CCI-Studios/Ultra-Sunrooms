@@ -901,6 +901,9 @@ label {
   position: relative;
   overflow: hidden;
   border-right: 0px; }
+.view-products-page .views-row.original .subtitle2,
+.view-products-page .views-row.original .subbody2 {
+  display: none; }
 .view-products-page .views-row.duplicate .subtitle1,
 .view-products-page .views-row.duplicate .subbody1 {
   display: none; }
@@ -961,10 +964,9 @@ label {
     font-weight: bold;
     font-style: italic;
     cursor: pointer; }
-    .view-products-page .side-text .subtitle.active p,
-    .view-products-page .side-text .subtitle p:hover {
+    .view-products-page .side-text .subtitle p {
       background: #2e2e2e; }
-    .view-products-page .side-text .subtitle p:hover:after, .view-products-page .side-text .subtitle.active p:after {
+    .view-products-page .side-text .subtitle p:after {
       content: "";
       display: block;
       position: absolute;
@@ -976,12 +978,6 @@ label {
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
       border-top: 8px solid #2e2e2e; }
-  .view-products-page .side-text .subbody {
-    display: none; }
-  .view-products-page .side-text .notvisible {
-    display: none; }
-  .view-products-page .side-text .subbody.visiblebody {
-    display: block !important; }
 .view-products-page .field-content {
   height: 100%;
   overflow: hidden; }
