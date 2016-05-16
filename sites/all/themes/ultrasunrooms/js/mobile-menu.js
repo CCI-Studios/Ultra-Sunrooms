@@ -15,7 +15,7 @@
     
       $('#block-block-8').click(function(){
 
-        $('#block-system-main-menu').slideToggle('slow');
+        $('#block-system-main-menu').slideToggle();
       });
 
     });

@@ -92,15 +92,17 @@ h3 {
   display: none; }
 
 #banner {
-  background: url(../images/Header-image.jpg) no-repeat;
-  background-size: cover;
-  -ms-behavior: url("/sites/all/themes/ultrasunrooms/css/backgroundsize.min.htc");
   margin-top: 12px;
   min-height: 472px;
   position: relative;
   background-position: bottom 6px;
   border-bottom: 1px solid #b2beb7;
   border-top: 1px solid #b2beb7; }
+  #banner .backbg {
+    -ms-behavior: url("/sites/all/themes/ultrasunrooms/css/backgroundsize.min.htc");
+    height: 472px;
+    background-position: center;
+    background-size: cover; }
 
 #block-block-3 {
   position: absolute;
@@ -349,8 +351,6 @@ h3 {
 .view-products-front-view .views-row-4 .backbg,
 .view-products-front-view .views-row-3 .backbg {
   background-position: center top; }
-.view-products-front-view .views-row-1 .backbg {
-  background-position: center -100px; }
 
 #footer {
   max-width: 1010px;
@@ -1159,6 +1159,16 @@ label {
     margin-top: 20px;
     float: left; }
 
+  .view-products-front-view .views-row .views-field-title {
+    display: none; }
+  .view-products-front-view .views-row .views-field-nothing {
+    min-height: auto;
+    max-height: 300px;
+    padding-bottom: 20px; }
+  .view-products-front-view .views-row:hover .views-field-nothing {
+    max-height: 300px;
+    padding-bottom: 20px; }
+
   .view-gallery-page {
     text-align: center; }
 
@@ -1309,6 +1319,11 @@ label {
 
   #warranty-logo {
     padding-top: 0px; }
+
+  #banner {
+    height: 400px; }
+    #banner .backbg {
+      background-position: -700px 0px; }
 
   .view-products-page .main-image {
     height: 235px; }

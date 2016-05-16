@@ -201,6 +201,31 @@
 		float: left;
 	}
 
+	.view-products-front-view
+	{
+		.views-row 
+		{	
+
+			.views-field-title
+			{
+				display: none;
+			}
+
+			.views-field-nothing
+			{
+				min-height: auto;
+				max-height: 300px;
+				padding-bottom: 20px;
+			}
+		}
+
+		.views-row:hover .views-field-nothing
+		{
+			max-height: 300px;
+			padding-bottom: 20px;
+		}
+	}
+
 	.view-gallery-page
 	{
 		text-align: center;
@@ -466,6 +491,16 @@
 	#warranty-logo
 	{
 		padding-top:0px;
+	}
+
+	#banner 
+	{	
+		height: 400px;
+		
+		.backbg
+		{
+			background-position: -700px 0px;
+		}
 	}
 
    .view-products-page

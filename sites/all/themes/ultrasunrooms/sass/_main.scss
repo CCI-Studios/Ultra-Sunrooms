@@ -129,15 +129,21 @@ h3
 
 #banner
 {
-	background:url(../images/Header-image.jpg) no-repeat;
-	background-size:cover;
-    -ms-behavior: url("/sites/all/themes/ultrasunrooms/css/backgroundsize.min.htc");
+    
 	margin-top:12px;
 	min-height:472px;
 	position:relative;
 	background-position:bottom 6px;
     border-bottom:1px solid $grey;
     border-top:1px solid $grey;
+
+    .backbg
+    {	
+    	-ms-behavior: url("/sites/all/themes/ultrasunrooms/css/backgroundsize.min.htc");
+    	height: 472px;
+    	background-position: center;
+    	background-size: cover;
+    }
 
 }
 
@@ -317,51 +323,46 @@ h3
 		    }
 		}
 
-	.expanded:hover 
-	{	
-		background:$black;
+		.expanded:hover 
+		{	
+			background:$black;
 
-		& > a:after
-		{
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: -7px;
-			z-index: 9999;
-			left: 45%;
-			width: 0;
-			height: 0;
-			border-left: 6px solid transparent;
-			border-right: 6px solid transparent;
-			border-top: 8px solid $black;
+			& > a:after
+			{
+				content: "";
+				display: block;
+				position: absolute;
+				bottom: -7px;
+				z-index: 9999;
+				left: 45%;
+				width: 0;
+				height: 0;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				border-top: 8px solid $black;
+			}
+
+			.submenu,
+	        a.active > .submenu
+		    {	
+		    	display: block;
+		    	background:$lightgreen;
+		    	position:absolute;
+		    	margin: 0px;
+		    	z-index: 999;
+		    	left:0;
+		    	width:100%;
+		    	border-bottom:2px solid $darkgreen;
+
+		    	a
+		    	{	
+				    border-right: 1px solid $darkgreen;
+		    		font-size: 16px;
+		    		padding:8px 8px;
+		    	}
+		    }
 		}
-
-		.submenu,
-        a.active > .submenu
-	    {	
-	    	display: block;
-	    	background:$lightgreen;
-	    	position:absolute;
-	    	margin: 0px;
-	    	z-index: 999;
-	    	left:0;
-	    	width:100%;
-	    	border-bottom:2px solid $darkgreen;
-
-	    	a
-	    	{	
-			    border-right: 1px solid $darkgreen;
-	    		font-size: 16px;
-	    		padding:8px 8px;
-	    	}
-	    }
-	
 	}
-
-
-	}
-
-	
 }
 
 #front-products
@@ -534,14 +535,6 @@ h3
 		.backbg
 		{
 			background-position:center top;
-		}
-	}
-
-	.views-row-1
-	{
-		.backbg
-		{
-			background-position:center -100px;
 		}
 	}
 }
