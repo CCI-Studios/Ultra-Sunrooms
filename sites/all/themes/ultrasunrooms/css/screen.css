@@ -110,10 +110,10 @@ h3 {
   background: rgba(101, 138, 116, 0.5);
   color: white;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  z-index: 1; }
   #block-block-3 ul {
     margin-left: 20px;
-    font-size: 14px;
     padding-bottom: 10px;
     padding-top: 10px; }
   #block-block-3 a {
@@ -128,7 +128,6 @@ h3 {
   font-size: 18px;
   float: right;
   text-align: center;
-  width: 400px;
   position: relative;
   margin-top: 30px; }
   #block-block-2 p:hover,
@@ -160,11 +159,6 @@ h3 {
     #block-block-2 .top-address p,
     .mobile-header-info .top-address p {
       font-size: 14px; }
-  #block-block-2 .buttons,
-  .mobile-header-info .buttons {
-    width: 243px;
-    position: absolute;
-    right: 0px; }
   #block-block-2 .middle,
   .mobile-header-info .middle {
     padding: 10px 0px;
@@ -176,11 +170,24 @@ h3 {
   margin-top: 0px;
   width: auto; }
 
-#block-block-1 {
+#block-block-1,
+#block-block-10 {
   text-align: center;
-  float: left;
   font-size: 14px;
-  padding-top: 5px; }
+  padding-top: 5px;
+  display: inline-block;
+  vertical-align: middle; }
+
+#block-block-10 {
+  font-size: 18px; }
+
+#block-block-10,
+#block-block-2 {
+  display: inline-block;
+  width: 25%; }
+
+#block-block-1 {
+  width: 49%; }
 
 .region-navigation {
   position: relative; }

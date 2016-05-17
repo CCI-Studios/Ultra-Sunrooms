@@ -155,11 +155,11 @@ h3
 	color:white;
 	width: 100%;
 	margin-bottom: 20px;
+	z-index: 1;
 
 	ul
 	{
 		margin-left: 20px;
-		font-size: 14px;
 		padding-bottom:10px;	
 		padding-top:10px;	
 	}
@@ -184,7 +184,6 @@ h3
 	font-size:18px;
 	float:right;
 	text-align:center;
-	width:400px;
 	position: relative;
 	margin-top: 30px;
 
@@ -225,14 +224,7 @@ h3
 			font-size: 14px;
 		}
 	}
-
-	.buttons
-	{
-		width: 243px;
-		position: absolute;
-		right: 0px;
-	}
-
+	
 	.middle
 	{
 		padding:10px 0px;
@@ -248,12 +240,32 @@ h3
 	width: auto;
 }
 
-#block-block-1
+#block-block-1,
+#block-block-10
 {
 	text-align:center;
-	float:left;
 	font-size:14px;
 	padding-top:5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#block-block-10
+{
+	font-size: 18px;
+}
+
+#block-block-10,
+#block-block-2{
+
+	display: inline-block;
+	width:25%;
+}
+
+#block-block-1{
+
+	width: 49%;
+	
 }
 
 .region-navigation
