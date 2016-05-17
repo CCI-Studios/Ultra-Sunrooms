@@ -184,6 +184,20 @@
 		margin-right:0px;
 	}
 }
+
+@media screen and (max-width:830px)
+{
+	#block-block-1
+	{	
+		width: 41%;
+	}
+
+	#block-block-2
+	{
+		width: 29%;
+	}
+}
+
 @media screen and (min-width:751px)
 {
 	#block-system-main-menu
@@ -199,6 +213,11 @@
 		display: block;
 		margin-top: 20px;
 		float: left;
+	}
+
+	#block-block-10{
+
+		display: none;
 	}
 
 	.view-products-front-view
