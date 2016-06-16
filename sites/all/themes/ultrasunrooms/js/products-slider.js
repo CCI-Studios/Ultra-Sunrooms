@@ -8,6 +8,13 @@
 	$('.item-list li > a').swipebox();
 	var max1 = $('.view-products-page .views-row').length;
 
+	$('.view-products-page .views-row').each(function(index){
+		console.log($(this).find('.subtitle2 p,.subtitle1 p').text());
+		if($(this).find('.subtitle2 p').text() == " " || $(this).find('.subtitle1 p').text() == " " ){
+			$(this).find('.subtitle2 p,.subtitle1 p').hide();
+		}
+	});
+
 	$('.item-list ul').slick({
 	  dots: false,
 	  infinite: true,
@@ -62,12 +69,6 @@
 	    // instead of a settings object
 	  ]});
 
-	$('.view-products-page .views-row').each(function(index){
-
-		if($(this).find('.subtitle p').text() == " "){
-			$(this).find('.subtitle p').hide();
-		}
-	});
 	
 
 	});
