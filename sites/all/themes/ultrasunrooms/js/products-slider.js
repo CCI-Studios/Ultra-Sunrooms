@@ -9,10 +9,16 @@
 	var max1 = $('.view-products-page .views-row').length;
 
 	$('.view-products-page .views-row').each(function(index){
-		console.log($(this).find('.subtitle2 p,.subtitle1 p').text());
-		if($(this).find('.subtitle2 p').text() == " " || $(this).find('.subtitle1 p').text() == " " ){
-			$(this).find('.subtitle2 p,.subtitle1 p').hide();
+		
+		if($(this).find('.subtitle p').text() == " "){
+
+			$(this).find('.subtitle p').hide();
 		}
+
+		if($(this).find('.subtitle2 p').text() == " "){
+
+			$(this).find('.subtitle2 p').hide();
+		}	
 	});
 
 	$('.item-list ul').slick({
