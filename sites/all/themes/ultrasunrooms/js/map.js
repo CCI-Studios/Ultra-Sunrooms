@@ -2,7 +2,7 @@
     $(function(){
        
 
-        if($("#full-width").length > 0)
+        if($("#map").length > 0)
         {
             createMap();
         }
@@ -19,7 +19,7 @@
         }
 
 
-        var map = new google.maps.Map($("#block-block-5").get(0),
+        var map = new google.maps.Map($("#map").get(0),
                         mapOptions);
 
         var marker = new google.maps.Marker({

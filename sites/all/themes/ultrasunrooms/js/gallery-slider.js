@@ -7,6 +7,8 @@
 	$(function()
 	{
 		init();	
+		$('.slick-slider').append('<span class="next after">sf</span>');
+	$('.next.after').insertAfter('.slick-next');
 		
 	});
 

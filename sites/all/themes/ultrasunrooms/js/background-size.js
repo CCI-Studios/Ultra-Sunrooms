@@ -1,5 +1,6 @@
 (function($){    
     $(function(){
+
     
         var max= $('.view-products-page .views-row').length;
       

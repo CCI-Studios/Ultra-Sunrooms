@@ -8,13 +8,6 @@
 	$('.item-list li > a').swipebox();
 	var max1 = $('.view-products-page .views-row').length;
 
-	$('.view-products-page .views-row').each(function(index){
-		if($(this).find('.subtitle p').text() == " "){
-			$(this).find('.subtitle p').hide();
-		}
-	});
-	
-
 	$('.item-list ul').slick({
 	  dots: false,
 	  infinite: true,
@@ -68,6 +61,14 @@
 	    // settings: "unslick"
 	    // instead of a settings object
 	  ]});
+
+	$('.view-products-page .views-row').each(function(index){
+
+		if($(this).find('.subtitle p').text() == " "){
+			$(this).find('.subtitle p').hide();
+		}
+	});
+	
 
 	});
 

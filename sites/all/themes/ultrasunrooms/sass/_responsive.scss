@@ -1,17 +1,5 @@
-
-@media screen and (max-width:1010px)
+@media screen and (max-width:1220px)
 {
-.views-row-2,
-	.views-row-4,
-	.views-row-6
-	{
-		.inner-text
-		{
-			padding-left:10px;
-			padding-right:20px;
-		}
-	}
-
 	#block-menu-menu-footer-menu
 	{
 		display: none;
@@ -38,6 +26,22 @@
 			width:50%;
 		}
 	}
+}
+
+
+@media screen and (max-width:1010px)
+{
+    .views-row-2,
+	.views-row-4,
+	.views-row-6
+	{
+		.inner-text
+		{
+			padding-left:10px;
+			padding-right:20px;
+		}
+	}
+
 
 	.views-field-field-other-images
 	{
@@ -487,6 +491,13 @@
 @media screen and (max-width:450px)
 {
 
+	#map,
+	.contact-info{
+
+		float: none;
+		width: auto;
+		padding-left: 0px;
+	}
 
 	#content img
 	{
@@ -532,11 +543,12 @@
 		.slick-prev
 		{
 			left:18px;
-			background:  $darkgreen;
-			
+			background: url(../images/arrow-left-green.png) no-repeat;
+
+			&:hover,
 			&:after
 			{
-				border-right:12px solid $darkgreen;
+				background: url(../images/arrow-left-green.png) no-repeat;
 			}
 			
 		}
@@ -544,11 +556,12 @@
 		.slick-next
 		{
 			right:18px;
-			background:  $darkgreen;
+			background: url(../images/arrow-right-green.png) no-repeat;
 
+			&:hover,
 			&:after
 			{
-				border-left:12px solid $darkgreen;
+				background: url(../images/arrow-right-green.png) no-repeat;
 			}
 			
 		}

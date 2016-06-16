@@ -36,6 +36,14 @@ h2
 	line-height:1.3em;
 }
 
+#map{
+
+	height: 300px;
+	width: 45%;
+	float: left;
+}
+
+
 #page-title,
 h2,
 h3
@@ -224,7 +232,7 @@ h3
 			font-size: 14px;
 		}
 	}
-	
+
 	.middle
 	{
 		padding:10px 0px;
@@ -253,6 +261,21 @@ h3
 #block-block-10
 {
 	font-size: 18px;
+
+	.top-address{
+
+		.text{
+
+			padding-bottom: 5px;
+		}
+		
+		.text + p{
+
+			border-top: 2px solid $lightgreen;
+			font-size: 26px;
+			padding-top: 5px;
+		}
+	}
 }
 
 #block-block-10,
@@ -553,7 +576,7 @@ h3
 
 #footer
 {	
-	max-width: 1010px;
+	max-width: 1220px;
 	margin:20px auto;
 	overflow:hidden;
 	color:$lightgreen;
@@ -566,11 +589,11 @@ h3
 
 	#block-menu-menu-footer-menu
 	{
-		width:50%;
+		width:40%;
 	}
 	#block-block-4
 	{
-		width:50%;
+		width:60%;
 	}
 
 	#block-block-4,
@@ -633,9 +656,9 @@ h3
 .images
 {	
 	p
-	{
-		width:50%;
-		float: left;
+	{	
+		display: inline-block;
+	    vertical-align: middle;
 	}
 
 	p:last-child
@@ -647,7 +670,6 @@ h3
 	}
 	p:first-child
 	{
-		width:30%;
 		padding-right:10px;
 	}
 }
@@ -807,18 +829,22 @@ a#back
 	.slick-next
 	{
 		color:transparent;
+		font-size: 0px;
 		background: white;
 		border:0px;
-		top:50px;
+		top:43px;
+		height: 35px;
+		width: 30px;
 		cursor: pointer;
 
-		&:hover
+		&:after
 		{
-			background:$lightgreen;
+			content: "";
+			position: absolute;
+			left: -1000px;
 		}
 	}
 
-	.slick-prev:after,
 	.view-header a:after
 	{	
 		content:"";
@@ -831,8 +857,7 @@ a#back
 		border-bottom: 14px solid transparent;
 	}
 
-	.view-header a:hover:after,
-	.slick-prev:hover:after
+	.view-header a:hover:after
 	{	
 		border-right: 12px solid $lightgreen;
 	}
@@ -841,10 +866,16 @@ a#back
 	.slick-prev
 	{
 		left:334px;
+		background: url(../images/arrow-left.png) no-repeat;
+
+		&:hover,
+		&:after
+		{
+			background: url(../images/arrow-left-green.png) no-repeat;
+		}
 	}
 
-	.view-footer a:after,
-	.slick-next:after
+	.view-footer a:after
 	{	
 		content: "";
 		position: absolute;
@@ -856,8 +887,7 @@ a#back
 		border-bottom: 14px solid transparent;
 	}
 
-	.view-footer a:hover:after,
-	.slick-next:hover:after
+	.view-footer a:hover:after
 	{	
 		border-left: 12px solid $lightgreen;
 	}
@@ -888,6 +918,13 @@ a#back
 	.slick-next
 	{
 		right:334px;
+		background: url(../images/arrow.png) no-repeat;
+
+		&:hover,
+		&:after
+		{
+			background: url(../images/arrow-right-green.png) no-repeat;
+		}
 	}
 
 	.slick-slide img
@@ -1069,9 +1106,9 @@ a#back
 
 .info-contact
 {
-	float: left;
-	margin-right:100px;
 	padding: 5px;
+	line-height: 1.2em;
+	padding-bottom: 20px;
 
 	p
 	{
@@ -1082,7 +1119,6 @@ a#back
 	span
 	{
 		font-size: 14px;
-		float: right;
 		padding-right:15px;
 		text-align: left;
 	}
@@ -1090,7 +1126,9 @@ a#back
 
 .contact-info
  {
- 	max-width: 705px;
+ 	width: 50%;
+	float: left;
+	padding-left: 20px;
  	margin: 0 auto;
  	overflow: hidden;
  }
@@ -1109,7 +1147,7 @@ a#back
 	margin-top: 10px;
 	margin-right: 0px;
 	float:left;
-	margin-right:0px;
+	line-height: inherit;
 
 	a:hover
 	{
@@ -1120,6 +1158,7 @@ a#back
 	{
 		font-size: 12px;
 		padding-right: 0px;
+		float: right;
 		width: 106px;
 	}
 }
@@ -1514,7 +1553,7 @@ a#back
 {
 	.info
 	{
-		padding-right:15px;
+		padding-right:10px;
 
 		p:first-child
 		{
@@ -1542,13 +1581,14 @@ a#back
 		.warranty-inner
 		{
 			float: left;
-			width:126px;
+			width:123px;
 			text-align: center;
+			padding-left: 9px;
 		}
 
 		.first-child
 		{
-			font-size: 20px;
+			font-size: 19px;
 			border-bottom:1px solid $darkgreen;
 		}
 	}
